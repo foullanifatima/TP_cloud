@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Configuration</title>
+</head>
+<body>
+  <div class="container   justify-content-center">
+    <div class="row d-flex justify-content-center">
+      <h1> Configurer la machine</h1>
+    </div>
+   
+
+    <div class="row d-flex justify-content-center">
+     
+    <form action="/configurer_machine" class="col-sm-6 my-auto"  method="post">
+        <div class="form-group">
+            <label for="email">Le nom de la machine que vous souhaiter modifier ses paramètres </label>
+            <input type="text" class="form-control" placeholder="Entrez le nom de la machine" name="name_machine">
+          </div>
+        <div class="form-group">
+          <label for="email">Configurer la mémoire: </label>
+          <input type="number" class="form-control" placeholder="Entrez une taille" name="memory_size">
+        </div>
+        <div class="form-group">
+          <label for="pwd">le nombre de processeur</label>
+          <input type="number" class="form-control" placeholder="Entrez un nombre" name="cpu_count">
+        </div>
+        <div class="form-group">
+            <label for="pwd">le nom de la machine virtuelle.</label>
+            <input type="text" class="form-control" placeholder="Donnez un nom" name="nom">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Projet Cloud Computing</title>
+</head>
+<!--
+    On a utiliser pour ce projet jinja2 comme une template qui permet d'écrire un code similaire
+    au python . 
+    bib : https://pypi.org/project/Jinja2/ 
+-->
+<body>
+    <div class="py-4">
+     <h1  class="text-center text-primary">Cloud Computing project</h1>
+   </div>
+    <!--affichage des liste disponibles des VMS-->
+    <div class="container ">
+        <div class="row m-auto">
+            <div class="col-sm-6 my-1">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Afficher les machine disponible</h5>
+                  <p class="card-text">Afficher la liste des machines virtuelles disponibles dans VirtualBox</p>
+                  <form action="/afficher" method="post">
+                  <button class="btn btn-primary"  type="submit">Affichage</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 my-1">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Afficher les machine en cours d’execution</h5>
+                  <p class="card-text">Afficher la liste des machines virtuelles en execution dans VirtualBox</p>
+                  <form action="/execution" method="post">
+                  <button  class="btn btn-primary">Affichage</button>
+                </form>
+                </div>
+              </div>
+            </div>
+            <!-- second row -->
+            
+                <div class="col-sm-6 my-1">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Configurer les machines</h5>
+                      <p class="card-text">Configurer la mémoire, le nombre de processeur, le nom de la machine virtuelle</p>
+                      <form action="/configurer" method="post">
+                      <button class="btn btn-primary"  type="submit">Configurer</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-1">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Démarrer une machine virtuelle et Arrêter</h5>
+                      <form action="/lancer" method="post" class="form-group" >
+                        <input type="text" class="form-control mb-1" placeholder="Donnez le nom de la machine" name="nom">
+                      
+                      <button  class="btn btn-primary">Démarrer</button>
+                      
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-1">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Arrêter une machine virtuelle </h5>
+                      <form action="/arreter" method="post" class="form-group" >
+                        <input type="text"   class="form-control mb-1" placeholder="Donnez le nom de la machine" name="nom"/>
+                      <button class="btn btn-primary">Arrêter</button>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-1">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"> Importer fichier ova</h5>
+                      <p class="card-text">Création d'une machine virtuelle à partir d'un fichier ova</p>
+                  <form action="/configurercarte" method="post">
+                  <button  class="btn btn-primary">Configurer</button>
+                </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-1">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Afficher l'adresse ip d'une machine </h5>
+                      <form action="/ipadresse" method="post" class="form-group" >
+                        <input type="text"   action="/ipadresse" class="form-control mb-1" placeholder="Donnez le nom de la machine" name="nom"/>
+                      <button class="btn btn-primary">Afficher</button>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 my-1">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Configurer network adapter </h5>
+                      <p class="card-text">(Hard coded)</p>
+                      <form action="/network" method="post" class="form-group" >
+                      <button class="btn btn-primary">Configurer</button>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+          
+</div>
+
+<!-- Footer -->
+<footer class="page-footer special-color-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="#"> Foullani fatima zohra & Oucif mohammed</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+  
+</body>
+</html>

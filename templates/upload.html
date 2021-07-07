@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Upload a ova file</title>
+</head>
+<body>
+  <div class="container   justify-content-center">
+    <div class="row d-flex justify-content-center">
+      <h1>Upload a ova file</h1>
+    </div>
+    <div class="row d-flex justify-content-center">
+        
+    <form action="/configurer2" method="POST" class="col-sm-6 my-auto">
+        <div class="form-group">
+            <label for="email">Path: </label>
+            <input type="text" class="form-control" placeholder="path" name="path">
+          </div>
+        <div class="form-group">
+          <label for="email">OVA file name: </label>
+          <input type="text" class="form-control" placeholder="file name" name="ova_name">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Machine name:</label>
+          <input type="text" class="form-control" placeholder="le nom de la machine" name="name">
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </form>
+    </div>
+    </div>
+</body>
+</html>
